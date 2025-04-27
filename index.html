@@ -3,71 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdullah Hammad's Portfolio</title>
+    <title>Abdullah Hammad | Cybersecurity Enthusiast</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <!-- Navbar -->
     <header>
         <nav class="navbar">
             <div class="logo">Abdullah Hammad</div>
             <ul>
-                <li><a href="#intro">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#writeups">Write-Ups</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Intro Section -->
-    <section id="intro">
-        <div class="intro-content">
-            <h1>Welcome to My Portfolio</h1>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h1>Hi, I'm Abdullah Hammad</h1>
             <p>Cybersecurity Enthusiast | Penetration Tester | Problem Solver</p>
+            <p>Exploring the world of cybersecurity and problem-solving with a passion for making things secure.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill-card">Penetration Testing</div>
+                <div class="skill-card">Network Security</div>
+                <div class="skill-card">Web Application Security</div>
+                <div class="skill-card">Bug Bounty Hunting</div>
+            </div>
         </div>
     </section>
 
     <!-- Write-Ups Section -->
     <section id="writeups">
-        <h1>My TryHackMe Write-Ups</h1>
-        <div class="writeup-list">
-            <div class="writeup" data-room="1">
+        <div class="container">
+            <h2>My TryHackMe Write-Ups</h2>
+            <div class="writeup-card" data-room="1">
                 <h3>Room 1: [Room Name]</h3>
-                <p>A brief description of the challenge you faced in the room.</p>
+                <p>Brief description of the room.</p>
             </div>
-            <div class="writeup" data-room="2">
+            <div class="writeup-card" data-room="2">
                 <h3>Room 2: [Room Name]</h3>
-                <p>A brief description of the challenge you faced in the room.</p>
+                <p>Brief description of the room.</p>
             </div>
-            <!-- Add more rooms here -->
+            <!-- More rooms can go here -->
         </div>
     </section>
 
-    <!-- Modal for Detailed Write-Up -->
+    <!-- Modal for Write-Up Details -->
     <div id="writeupModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Room 1: [Room Name] - Detailed Write-Up</h2>
-            <p><strong>Description:</strong> Full description of the challenge.</p>
-            <h3>Step-by-Step Process:</h3>
+            <h2>Room 1: Detailed Write-Up</h2>
+            <p>Full description of the challenge.</p>
             <ol>
-                <li>Step 1: Describe the steps...</li>
-                <li>Step 2: Continue your solution...</li>
-                <li>Step 3: Finally...</li>
+                <li>Step 1: Description of the step.</li>
+                <li>Step 2: Continue the solution.</li>
             </ol>
-            <p><strong>Tools Used:</strong> Nmap, Burp Suite, etc.</p>
-            <p><strong>Flag:</strong> [Your Flag Here]</p>
             <a href="https://www.tryhackme.com/room/room1" target="_blank">Go to TryHackMe Room</a>
         </div>
     </div>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer id="contact">
-        <p>Contact Me: <a href="https://www.linkedin.com/in/abdallah-hammad-376a42231/">linkedin/in/abdallah-hammad</a></p>
+        <p>Contact Me: <a href="mailto:abdullah@example.com">abdullah@example.com</a></p>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
