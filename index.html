@@ -3,71 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdullah Hammad | Penetration Tester</title>
+    <title>Abdullah Hammad's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Navbar -->
     <header>
-        <div class="navbar">
+        <nav class="navbar">
             <div class="logo">Abdullah Hammad</div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#writeups">Write-Ups</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <h1>About Me</h1>
-        <p>Hello, I'm Abdullah Hammad, a Junior Penetration Tester with a passion for cybersecurity, ethical hacking, and web application security. I aim to help companies strengthen their security posture through proactive penetration testing and vulnerability analysis.</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h1>Skills</h1>
-        <div class="skills">
-            <div class="skill">
-                <h3>Penetration Testing Tools</h3>
-                <p>Nmap, Burp Suite, Metasploit, Wireshark, Gobuster</p>
-            </div>
-            <div class="skill">
-                <h3>Networking</h3>
-                <p>TCP/IP, OSI Model, Network Scanning, Packet Analysis</p>
-            </div>
-            <div class="skill">
-                <h3>Web Security</h3>
-                <p>OWASP Top 10, Web Application Vulnerability Scanning</p>
-            </div>
+    <!-- Intro Section -->
+    <section id="intro">
+        <div class="intro-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Cybersecurity Enthusiast | Penetration Tester | Problem Solver</p>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h1>Projects</h1>
-        <div class="project-list">
-            <div class="project">
-                <h3>TryHackMe: Junior Penetration Tester Path</h3>
-                <p>Completed 50+ penetration testing challenges covering various security vulnerabilities.</p>
+    <!-- Write-Ups Section -->
+    <section id="writeups">
+        <h1>My TryHackMe Write-Ups</h1>
+        <div class="writeup-list">
+            <div class="writeup" data-room="1">
+                <h3>Room 1: [Room Name]</h3>
+                <p>A brief description of the challenge you faced in the room.</p>
             </div>
-            <div class="project">
-                <h3>Hack The Box</h3>
-                <p>Rooted multiple machines and explored real-world pentesting scenarios.</p>
+            <div class="writeup" data-room="2">
+                <h3>Room 2: [Room Name]</h3>
+                <p>A brief description of the challenge you faced in the room.</p>
             </div>
+            <!-- Add more rooms here -->
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h1>Contact</h1>
-        <p>Email: abdullah.hammad@email.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/abdallah-hammad-376a42231/">linkedin.com/in/abdallah-hammad</a></p>
-    </section>
+    <!-- Modal for Detailed Write-Up -->
+    <div id="writeupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Room 1: [Room Name] - Detailed Write-Up</h2>
+            <p><strong>Description:</strong> Full description of the challenge.</p>
+            <h3>Step-by-Step Process:</h3>
+            <ol>
+                <li>Step 1: Describe the steps...</li>
+                <li>Step 2: Continue your solution...</li>
+                <li>Step 3: Finally...</li>
+            </ol>
+            <p><strong>Tools Used:</strong> Nmap, Burp Suite, etc.</p>
+            <p><strong>Flag:</strong> [Your Flag Here]</p>
+            <a href="https://www.tryhackme.com/room/room1" target="_blank">Go to TryHackMe Room</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Contact Me: <a href="https://www.linkedin.com/in/abdallah-hammad-376a42231/">linkedin/in/abdallah-hammad</a></p>
+    </footer>
 
     <script src="app.js"></script>
 </body>
